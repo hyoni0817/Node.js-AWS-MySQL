@@ -18,9 +18,6 @@ router.route('/Writings/:writeId')
 	.get(showWriteDetail)
 	.post(editWrite);
 
-
-
-
 function addNewWrite(req,res,next) {
 	const username = req.body.username;
 	const title =req.body.title;
