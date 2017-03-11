@@ -1,5 +1,5 @@
 const pool = require('./dbConnection.js');
-var request = require('request'); //테스트
+var request = require('request');
 class Writing {}
 
 Writing.saveWrite = (userId, username, title, contents, callback) => {
