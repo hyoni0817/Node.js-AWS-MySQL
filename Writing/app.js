@@ -8,9 +8,6 @@ app.use(bodyParser.json());
 
 const WriteRouter = require('./router/WriteRouter.js');
 
-const pool = require('./model/dbConnection.js');
-
-
 app.use(morgan('dev'));
 app.use(WriteRouter);
 
