@@ -17,14 +17,14 @@
   },
   "homepage": "https://github.com/hyoni0817/Node.js-AWS-MySQL#readme",
   "dependencies": {
-    "async": "^2.0.1",
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0",
-    "formidable": "^1.0.17",
-    "morgan": "^1.7.0",
-    "mysql": "^2.11.1",
+    "async": "^2.5.0",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "formidable": "^1.1.1",
+    "morgan": "^1.8.2",
+    "mysql": "^2.14.0",
     "nodemon": "^1.10.0",
     "querystring": "^0.2.0",
-    "request": "^2.74.0"
+    "request": "^2.81.0"
   }
 }
