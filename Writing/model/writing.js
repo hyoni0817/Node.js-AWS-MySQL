@@ -65,7 +65,7 @@ Writing.updateWrite = (writeId, title, contents, userId, callback) => {
 				conn.release();
 				return callback(err,null);
 			}
-			callback(null, {msg: 'update success'})
+			callback(null, {msg: 'writing update success'})
 			conn.release();
 		});
 	});
