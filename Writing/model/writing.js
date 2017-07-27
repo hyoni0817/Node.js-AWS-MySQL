@@ -6,7 +6,7 @@ Writing.saveWrite = (userId, username, title, inputDate, contents, callback) => 
 	pool.getConnection( (err, conn) => {
 		if (err) return callback (err, null);
 		const sql = 'insert into board set ?';
-		const params = {USER_ID : userId, USERNAME: username, TITLE : title, DATE : inputDate, CONTENTS : contents};
+		const params = {USER_ID : userId, USER_NM: username, TITLE : title, DATE : inputDate, CONTENTS : contents};
 
 				conn.query(sql, params, (err, results) => {
 					if(err) {
@@ -25,7 +25,7 @@ Writing.getWriList = function(query, callback) {
 		if(err) return callback(err, null);
 		//console.log(query);
 
-		const sql = 'select WRITE_ID, USERNAME, TITLE from board order by WRITE_ID desc;'
+		const sql = 'select WRITE_ID, USER_NM, TITLE from board order by WRITE_ID desc;'
 		conn.query(sql, (err, result) => {
 
 			const obj = {
