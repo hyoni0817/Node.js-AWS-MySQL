@@ -9,6 +9,7 @@ create table withdraw (
 
 create table users (
 	USER_ID varchar(10) not null,
+    USER_NM varchar(15) not null,
     NICKNAME varchar(10) not null,
     PHONE_NO int(11) not null,
     PRO_IMG varchar(100) not null,
@@ -17,4 +18,4 @@ create table users (
     primary key(USER_ID)
 );
 
-insert into users (USER_ID, NICKNAME, PHONE_NO, PRO_IMG, GENDER, JOIN_DT, USERNAME) values ('king89', 'HappyDay', 01012345678, '0', 'M', '2017-07-01', 'Smith');
+insert into users (USER_ID, NICKNAME, PHONE_NO, PRO_IMG, GENDER, JOIN_DT, USER_NM) values ('king89', 'HappyDay', 01012345678, '0', 'M', '2017-07-01', 'Smith');
