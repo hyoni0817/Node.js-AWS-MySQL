@@ -17,4 +17,4 @@ create table users (
     primary key(USER_ID)
 );
 
-insert into users (USER_ID, NICKNAME, PHONE_NO, PRO_IMG, GENDER, JOINDATE, USERNAME) values ('king89', 'HappyDay', 01012345678, '0', 'M', '2017-07-01', 'Smith');
+insert into users (USER_ID, NICKNAME, PHONE_NO, PRO_IMG, GENDER, JOIN_DT, USERNAME) values ('king89', 'HappyDay', 01012345678, '0', 'M', '2017-07-01', 'Smith');
