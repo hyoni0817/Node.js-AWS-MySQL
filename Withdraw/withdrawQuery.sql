@@ -11,7 +11,7 @@ create table users (
 	USER_ID varchar(10) not null,
     USER_NM varchar(15) not null,
     NICKNAME varchar(10) not null,
-    PHONE_NO int(11) not null,
+    PHONE_NO varchar(11) not null,
     PRO_IMG varchar(100) not null,
     GENDER varchar(1) not null,
     JOIN_DT date not null,
