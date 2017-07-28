@@ -6,7 +6,7 @@ Writing.saveWrite = (userId, username, title, inputDate, contents, callback) => 
 	pool.getConnection( (err, conn) => {
 		if (err) return callback (err, null);
 		const sql = 'insert into board set ?';
-		const params = {USER_ID : userId, USER_NM: username, TITLE : title, DATE : inputDate, CONTENTS : contents};
+		const params = {USER_ID : userId, USER_NM: username, TITLE : title, WRITE_DT : inputDate, CONTENTS : contents};
 
 				conn.query(sql, params, (err, results) => {
 					if(err) {
