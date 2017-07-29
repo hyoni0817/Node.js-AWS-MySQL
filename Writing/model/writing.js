@@ -23,7 +23,6 @@ Writing.saveWrite = (userId, username, title, inputDate, contents, callback) => 
 Writing.getWriList = function(query, callback) {
 	pool.getConnection ((err, conn) => {
 		if(err) return callback(err, null);
-		//console.log(query);
 
 		const sql = 'select WRITE_ID, USER_NM, TITLE from board order by WRITE_ID desc;'
 		conn.query(sql, (err, result) => {
