@@ -13,7 +13,6 @@ Writing.saveWrite = (userId, username, title, inputDate, contents, callback) => 
 						conn.release();
 						return callback(err, null);
 					}
-					//console.log('writing success')
 					return callback(null, {msg : 'write insert success'});
 					conn.release();
 				});
