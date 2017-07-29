@@ -36,13 +36,13 @@ function addNewWrite(req,res,next) {
 			if(err) return next(err);
 			res.send(result);
 		});
-}//새로운 드라이버 글 등록하고 저장하기
+}
 
 
 function showWriteList(req, res) {
 	Writing.getWriList( req.query, (err, result) => {
 		if(err) {
-			res.status(500).send({msg:'getWriList fail'});
+			res.status(500).send({msg:'getWriList fail. Check host, portnumber, etc. in model/dbConnection.js file.'});
 			return;
 		}
 		res.send(result);
@@ -87,7 +87,7 @@ function showWriteDetail(req, res) {
 
 	Writing.getWriteDetail(writeId, (err, result)=> {
 		if(err) {
-			res.status(500).send({msg:'getWriteDetail fail'});
+			res.status(500).send({msg:'getWriteDetail fail. Check host, portnumber, etc. in model/dbConnection.js file.'});
 			return;
 		}
 
@@ -96,7 +96,7 @@ function showWriteDetail(req, res) {
 			return res.send(result);
 		}
 		else{
-			res.status(404).send({msg:'page fail'})
+			res.status(404).send({msg:'page fail. Check host, portnumber, etc. in model/dbConnection.js file.'})
 		}
 
 	});
