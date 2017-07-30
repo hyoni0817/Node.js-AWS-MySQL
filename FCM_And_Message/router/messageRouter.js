@@ -22,7 +22,7 @@ function addNewMsgWri(req,res,next) {
 	var date = new Date();
 	const sender = req.body.sender;
 	const msgText = req.body.msgText;
-	const msgDate =  date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" "+date.getHours()+":"+date.getMinutes()+ ":" + date.getSeconds(); //자바스크립트로 고치기
+	const msgDate =  date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" "+date.getHours()+":"+date.getMinutes()+ ":" + date.getSeconds(); 
 	const receiver = req.body.receiver;
 
   if(!sender) return res.status(400).send({msg:'sender error'});
