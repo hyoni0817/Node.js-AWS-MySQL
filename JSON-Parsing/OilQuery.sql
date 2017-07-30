@@ -3,3 +3,6 @@ create table oilprice (
     GASOLINE double not null,
     primary key(OIL_ID)
 );
+
+insert into oilprice values(1,1322.1);
+select * from oilprice;
