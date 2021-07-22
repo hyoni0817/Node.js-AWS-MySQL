@@ -1,7 +1,7 @@
 var FCM = require('fcm-push');
 const pool = require('./dbConnection.js');
 
-var serverKey = 'AIzaSyBFVSRNkNoIgI_atpqc1SuXy3vWyl7-23g'; //안드로이드 쪽 사람이 생성한 서버키
+var serverKey = 'your server key'; //안드로이드 쪽 사람이 생성한 서버키
 var fcm = new FCM(serverKey);
 
 class Fcmpush {}
