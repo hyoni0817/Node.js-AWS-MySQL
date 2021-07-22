@@ -8,7 +8,7 @@
 
 ## 각 폴더에서 구현된 기능 소개
 - [FCM_And_Message](https://github.com/hyoni0817/Node.js-AWS-MySQL/tree/master/FCM_And_Message) : 사용자 간에 메시지를 주고받고, 메시지 도착 시 Firebase Cloud Messaging을 통해 안드로이드 어플에 알림을 전달하는 기능
-- [JSON-Parsing](https://github.com/hyoni0817/Node.js-AWS-MySQL/tree/master/JSON-Parsing) : 오피넷에서 제공하는 유가정보 API의 JSON 데이터를 파싱해서 매주 일요일 유가를 업데이트하는 기능
+- [JSON-Parsing](https://github.com/hyoni0817/Node.js-AWS-MySQL/tree/master/JSON-Parsing) : 오피넷에서 제공하는 유가정보 API의 JSON 데이터를 파싱해서 매주 토요일 유가를 업데이트하는 기능
 - [Review](https://github.com/hyoni0817/Node.js-AWS-MySQL/tree/master/Review) : 카풀 이용 후 상대방에게 리뷰를 전송하고, 받은/보낸 리뷰함에 저장하는 기능
 - [Withdraw](https://github.com/hyoni0817/Node.js-AWS-MySQL/tree/master/Withdraw) : 회원 탈퇴 기능
 - [Writing](https://github.com/hyoni0817/Node.js-AWS-MySQL/tree/master/Writing) : 드라이버 및 라이더 찾는 글 작성/수정/삭제 기능
